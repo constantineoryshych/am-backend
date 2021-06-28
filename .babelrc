@@ -1,0 +1,30 @@
+{
+	"presets": [
+		"@babel/preset-typescript",
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": true
+				}
+			}
+		]
+	],
+	"plugins": [
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-object-rest-spread",
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"~/@": "./src/data/",
+					"~/@@": "./src/data/interfaces",
+					"~/c": "./src/ts/controllers/",
+					"~/m": "./src/ts/models/index.ts",
+					"~/logic": "./src/ts/logic/",
+					"~/utils": "./src/ts/utils/"
+				}
+			}
+		]
+	]
+}

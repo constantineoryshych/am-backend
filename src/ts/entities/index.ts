@@ -1,0 +1,1 @@
+export { ICampaignStructure, ICampaignRequired, ACampaign, Campaign } from "./campaign";
